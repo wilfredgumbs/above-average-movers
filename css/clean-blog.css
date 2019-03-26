@@ -7,7 +7,7 @@
 body {
   font-size: 20px;
   color: #212529;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -33,6 +33,7 @@ h6 {
 
 a {
   color: #212529;
+
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -80,7 +81,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  position: absolute;
+  position: sticky;
   border-bottom: 1px solid #e9ecef;
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -98,7 +99,11 @@ img::-moz-selection {
   text-transform: uppercase;
   color: #343a40;
 }
+.nav-item{
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 
+
+}
 #mainNav .navbar-nav > li.nav-item > a {
   font-size: 12px;
   font-weight: 800;
@@ -110,6 +115,7 @@ img::-moz-selection {
   #mainNav {
     border-bottom: 1px solid transparent;
     background: transparent;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
@@ -390,9 +396,22 @@ footer .copyright {
   padding: 15px 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0;
+  border-radius: 30px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.btn-sm {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 30px;
+}
+
+
 
 .btn-primary {
   background-color: #0085A1;
