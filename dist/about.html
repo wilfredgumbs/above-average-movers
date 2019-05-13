@@ -33,6 +33,31 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet" />
+    <style>
+      .required:after {
+        content: " *";
+        color: darkred;
+      }
+      @media (min-width: 319px) {
+        img {
+          height: 150px;
+          width: 150px;
+        }
+        .secondnav {
+          display: none !important;
+        }
+
+        .navbar-nav {
+          background-color: white;
+        }
+      }
+      @media (min-width: 992px) {
+        img {
+          height: 250px;
+          width: 300px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -149,7 +174,7 @@
               >
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav secondnav ml-auto">
             <li class="nav-item">
               <a
                 class=" btn-success btn-sm"

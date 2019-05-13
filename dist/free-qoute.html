@@ -52,6 +52,25 @@
         content: " *";
         color: darkred;
       }
+      @media (min-width: 319px) {
+        img {
+          height: 150px;
+          width: 150px;
+        }
+        .secondnav {
+          display: none !important;
+        }
+
+        .navbar-nav {
+          background-color: white;
+        }
+      }
+      @media (min-width: 992px) {
+        img {
+          height: 250px;
+          width: 300px;
+        }
+      }
     </style>
   </head>
 
@@ -132,7 +151,7 @@
               >
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav secondnav ml-auto">
             <li class="nav-item">
               <a
                 class=" btn-success btn-sm"
@@ -150,14 +169,22 @@
               </h3>
             </li>
             <li class="nav-item">
-              <span style="font-size: 1em; color:green;margin-left:10px;">
-                <i class="fab fa-facebook-f"></i>
-              </span>
+              <a
+                href="https://www.facebook.com/Above-Average-Movers-LLC-452142838163532/"
+              >
+                <span style="font-size: 1em; color:green;margin-left:10px;">
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+              </a>
             </li>
             <li class="nav-item">
-              <span style="font-size: 1em; color:green; margin-left:10px;">
-                <i class="fab fa-instagram"></i>
-              </span>
+              <a
+                href="https://instagram.com/above_average_moversga?utm_source=ig_profile_share&igshid=8zqcv2zn9yt4"
+              >
+                <span style="font-size: 1em; color:green; margin-left:10px;">
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </a>
             </li>
           </ul>
         </div>

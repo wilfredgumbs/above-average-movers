@@ -52,15 +52,16 @@
         content: " *";
         color: darkred;
       }
-      @media (min-width: 320px) {
+      @media (min-width: 319px) {
         img {
           height: 150px;
           width: 150px;
         }
         .secondnav {
-          display: none;
+          display: none !important;
         }
-        .dropdown-toggle {
+        .navbar-nav {
+          background-color: white;
         }
       }
       @media (min-width: 992px) {
@@ -164,49 +165,6 @@
               </h3>
             </li>
             <li class="nav-item">
-              <span style="font-size: 1em; color:green;margin-left:10px;">
-                <i class="fab fa-facebook-f"></i>
-              </span>
-            </li>
-            <li class="nav-item">
-              <span style="font-size: 1em; color:green; margin-left:10px;">
-                <i class="fab fa-google"></i>
-              </span>
-            </li>
-            <li class="nav-item">
-              <span style="font-size: 1em; color:green; margin-left:10px;">
-                <i class="fab fa-instagram"></i>
-              </span>
-            </li>
-            <li class="nav-item">
-              <span style="font-size: 1em; color:green; margin-left:10px;">
-                <i class="fab fa-twitter"></i>
-              </span>
-            </li>
-            <li class="nav-item">
-              <span style="font-size: 1em; color:green; margin-left:10px;">
-                <i class="fab fa-youtube"></i>
-              </span>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a
-                class=" btn-success btn-sm"
-                href="free-qoute.html"
-                role="button"
-                style="margin-left:10px;margin-right: 30px; text-decoration: none;"
-                >Get A Free Quote
-              </a>
-            </li>
-            <li class="nav-item">
-              <h3
-                style="margin-left:5px; margin-right: 5px; margin-bottom: 4px; color: green"
-              >
-                678-225-8938
-              </h3>
-            </li>
-            <li class="nav-item">
               <a
                 href="https://www.facebook.com/Above-Average-Movers-LLC-452142838163532/"
               >
@@ -277,7 +235,13 @@
           <div class="col-md-4">
             <div class="card">
               <div class="card-body" style="background-color: lightblue">
-                <form class="needs-validation" novalidate>
+                <form
+                  id="contact-form"
+                  class="needs-validation"
+                  method="post"
+                  action="/contact"
+                  novalidate
+                >
                   <h3 style="color: green">Get A Free Quote</h3>
                   <br />
 
@@ -429,7 +393,7 @@
                       >How did you hear about us</label
                     >
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
                       id="exampleFormControlInput1"
                     />
