@@ -58,17 +58,25 @@
           width: 150px;
         }
         .secondnav {
-          display: none !important;
+          visibility: hidden;
         }
-
         .navbar-nav {
           background-color: white;
         }
       }
-      @media (min-width: 992px) {
+      @media (min-width: 576px) {
+      }
+
+      @media (min-width: 768px) {
+      }
+
+      @media (min-width: 960px) {
         img {
           height: 250px;
           width: 300px;
+        }
+        .secondnav {
+          visibility: visible;
         }
       }
     </style>
@@ -117,14 +125,19 @@
                 <a class="dropdown-item" href="moving-service.html"
                   >Long Distance</a
                 >
-                <a class="dropdown-item" href="#">International</a>
-                <a class="dropdown-item" href="#">White Glove Service</a>
-                <a class="dropdown-item" href="#">Antiques</a>
-                <a class="dropdown-item" href="#">Storage</a>
-                <a class="dropdown-item" href="#">Packing</a>
-                <a class="dropdown-item" href="#">Moving Vans</a>
-                <a class="dropdown-item" href="#">Senior Moving</a>
-                <a class="dropdown-item" href="#">Supplies</a>
+                <a class="dropdown-item" href="moving-service.html"
+                  >International</a
+                >
+                <a class="dropdown-item" href="moving-service.html"
+                  >Furniture Protection</a
+                >
+                <a class="dropdown-item" href="moving-service.html"
+                  >Assembly/Disassembly</a
+                >
+                <a class="dropdown-item" href="moving-service.html"
+                  >Senior Moving</a
+                >
+                <a class="dropdown-item" href="moving-service.html">Supplies</a>
               </div>
             </li>
             <li class="nav-item">
