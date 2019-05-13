@@ -34,7 +34,7 @@ app.use(express.static("dist"));
 
 
 app.post('/contact', function (req,res) {
-
+    console.log(req.body);
 
 
     let transporter = nodemailer.createTransport({
@@ -42,16 +42,16 @@ app.post('/contact', function (req,res) {
         port: 587,
         secure: false,
         auth: {
-            user: process.env.GMAIL,
-            pass: process.env.GMAIL_KEY
+            user: "aboveavg55@gmail.com",
+            pass: "Zebrastripes19"
         }
     });
 
     let mailOptions = {
-        from: `"${req.body.name}"  <${req.body.senderemail}>`,
-        to: 'info@cod-it.tech',
-        subject: 'New Codit Inquiry',
-        text: `from ${req.body.senderemail} \nclients name ${req.body.name}  \n  ${req.body.message}`
+        from: `"${req.body.name}"  <${req.body.email}>`,
+        to: 'aboveavg55@gmail.com',
+        subject: '',
+        text: `from ${req.body.email} \nclients name ${req.body.name}  \n  ${req.body.instructions}`
     };
 
     transporter.sendMail(mailOptions, function(error, info){

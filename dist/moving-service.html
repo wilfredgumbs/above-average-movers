@@ -33,6 +33,26 @@
             content: " *";
             color: darkred
         }
+        @media (min-width: 320px) {
+            img {
+                height: 150px;
+                width: 150px;
+            }
+            .secondnav  {
+                display: none;
+            }
+            .dropdown-toggle {
+
+            }
+
+        }
+        @media (min-width : 992px) {
+            img {
+                height: 250px;
+                width: 300px;
+            }
+
+        }
     </style>
 
 </head>
@@ -46,7 +66,7 @@
         <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" alt="AAM Logo" height="250" width="300">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                data-target="#navbarResponsive" aria-haspopup="true"  aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
@@ -63,52 +83,26 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Long Distance</a>
                         <a class="dropdown-item" href="#">International</a>
-                        <a class="dropdown-item" href="#">White Glove Service</a>
-                        <a class="dropdown-item" href="#">Antiques</a>
-                        <a class="dropdown-item" href="#">Storage</a>
-                        <a class="dropdown-item" href="#">Packing</a>
-                        <a class="dropdown-item" href="#">Moving Vans</a>
+                        <a class="dropdown-item" href="#">Furniture Protection</a>
+                        <a class="dropdown-item" href="#">Assembly/Disassembly</a>
                         <a class="dropdown-item" href="#">Senior Moving</a>
                         <a class="dropdown-item" href="#">Supplies</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" style="color: #051d8b;font-weight: bold; font-size: 12pt;"
-                       href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">
-                        Residential
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Apartment</a>
-                        <a class="dropdown-item" href="#">Home</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" style="color: #051d8b;font-weight: bold; font-size: 12pt;"
-                       href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">
-                        Commercial
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Office</a>
-                        <a class="dropdown-item" href="#">Corporate</a>
-                        <a class="dropdown-item" href="#">National Accounts</a>
-                        <a class="dropdown-item" href="#">Computer & Electronics</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="delivery.html" style="color: #051d8b;font-weight: bold; font-size: 12pt;">Delivery
+                        </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="faq.html"
                        style="color: #051d8b;font-weight: bold; font-size: 12pt;">FAQ</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html" style="color: #051d8b;font-weight: bold; font-size: 12pt;">About
-                        us</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html" style="color: #051d8b;font-weight: bold; font-size: 12pt;">Contact</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav secondnav ml-auto">
                 <li class="nav-item">
                     <a class=" btn-success btn-sm" href="free-qoute.html" role="button"
                        style="margin-left:10px;margin-right: 30px; text-decoration: none;">Get A
@@ -116,7 +110,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <h3 style="margin-left:5px; margin-right: 5px; margin-bottom: 4px; color: green">678-662-5796</h3>
+                    <h3 style="margin-left:5px; margin-right: 5px; margin-bottom: 4px; color: green">678-225-8938</h3>
                 </li>
                 <li class="nav-item">
                     <span style="font-size: 1em; color:green;margin-left:10px;">
@@ -144,6 +138,32 @@
                     </span>
                 </li>
             </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class=" btn-success btn-sm" href="free-qoute.html" role="button"
+                       style="margin-left:10px;margin-right: 30px; text-decoration: none;">Get A
+                        Free Quote
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <h3 style="margin-left:5px; margin-right: 5px; margin-bottom: 4px; color: green">678-225-8938</h3>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/Above-Average-Movers-LLC-452142838163532/">
+                    <span style="font-size: 1em; color:green;margin-left:10px;">
+                     <i class="fab fa-facebook-f"></i>
+                    </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://instagram.com/above_average_moversga?utm_source=ig_profile_share&igshid=8zqcv2zn9yt4">
+
+                    <span style="font-size: 1em; color:green; margin-left:10px;">
+                     <i class="fab fa-instagram"></i>
+                    </span>
+                    </a>
+                </li>
+            </ul>
 
         </div>
     </div>
@@ -161,35 +181,19 @@
                             aria-controls="multiCollapseExample1">Long Distance
                     </button>
                     <button class="btn btn-success" type="button" data-toggle="collapse" style=" margin-bottom: 10px;"
-                            data-target="#multiCollapseExample2" aria-expanded="false"
-                            aria-controls="multiCollapseExample2">International
-                    </button>
-                    <button class="btn btn-success" type="button" data-toggle="collapse" style=" margin-bottom: 10px;"
                             data-target="#multiCollapseExample3" aria-expanded="false"
-                            aria-controls="multiCollapseExample3">White Glove Service
+                            aria-controls="multiCollapseExample4">Furniture Protection
                     </button>
                     <button class="btn btn-success" type="button" data-toggle="collapse" style=" margin-bottom: 10px;"
                             data-target="#multiCollapseExample4" aria-expanded="false"
-                            aria-controls="multiCollapseExample4">Antiques
+                            aria-controls="multiCollapseExample5">Assembly/Disassembly
                     </button>
                     <button class="btn btn-success" type="button" data-toggle="collapse" style=" margin-bottom: 10px;"
                             data-target="#multiCollapseExample5" aria-expanded="false"
-                            aria-controls="multiCollapseExample5">Storage
-                    </button>
-                    <button class="btn btn-success" type="button" data-toggle="collapse" style=" margin-bottom: 10px;"
-                            data-target="#multiCollapseExample6" aria-expanded="false"
-                            aria-controls="multiCollapseExample6">Packing
-                    </button>
-                    <button class="btn btn-success" type="button" data-toggle="collapse" style=" margin-bottom: 10px;"
-                            data-target="#multiCollapseExample7" aria-expanded="false"
-                            aria-controls="multiCollapseExample7">Moving Vans
-                    </button>
-                    <button class="btn btn-success" type="button" data-toggle="collapse" style=" margin-bottom: 10px;"
-                            data-target="#multiCollapseExample8" aria-expanded="false"
                             aria-controls="multiCollapseExample8">Senior Moving
                     </button>
                     <button class="btn btn-success" type="button" data-toggle="collapse" style=" margin-bottom: 10px;"
-                            data-target="#multiCollapseExample9" aria-expanded="false"
+                            data-target="#multiCollapseExample6" aria-expanded="false"
                             aria-controls="multiCollapseExample9">Supplies
                     </button>
                 </div>
@@ -201,55 +205,14 @@
                             <header class="entry-header"><h1 class="entry-title" style="color: #051d8b">Long
                                 Distance</h1></header>
                             <div class="entry-content"><p>
-                                While we are exceptionally proud of our <a title="Moving Services"
-                                                                           href="https://atlpeachmovers.com/moving-services/">Atlanta
-                                moving services</a> at the local level, Above Average Movers is truly a national and
-                                international moving company. Thanks to our dedicated long distance division, Peach
-                                Worldwide Van Lines, we are able to provide the same level of care, service and
-                                excellence for long distance moves as we provide to our local Atlanta customers.</p>
-                                <p>
-                                    Whether you’re moving to another part of Georgia, across state lines, or even
-                                    overseas, we have the resources and manpower to facilitate all the details of your
-                                    move from beginning to end. Your moving coordinator will advise you on any special
-                                    details involved in your long distance move, to make sure you’re fully prepared when
-                                    moving day arrives. We also provide <a title="Packing"
-                                                                           href="https://atlpeachmovers.com/moving-services/packing/">quality
-                                    packing services</a>, and even a <a title="Storage"
-                                                                        href="https://atlpeachmovers.com/moving-services/storage/">secure
-                                    storage facility</a> under 24-hour surveillance in case you can’t bring everything
-                                    with you on your new adventure. And because every one of our moving staff is
-                                    full-time and trained by us at <a title="Peach University™"
-                                                                      href="https://atlpeachmovers.com/about-us/peach-university/">our
-                                    special training facility</a>, you can rest assured that your belongings are in good
-                                    hands from beginning to end.</p>
-                                <h3 style="color: #051d8b">Move out of Georgia</h3>
-                                <p>Perhaps the greatest advantage of our long distance moving service is that we don’t
-                                    have to broker your move to an interstate or international affiliate. With Atlanta
-                                    Peach Movers and Peach Worldwide Van Lines, our chain of custody remains intact from
-                                    your starting point to your end point. This means that the same company you trusted
-                                    to pack and load your belongings is the same company that delivers them to your new
-                                    place—namely, us! You’ll even have the same movers on both ends of the move.</p>
-                                <p>Because your property is going to travel a good distance out of the metro Atlanta
-                                    area within Georgia or outside of it, Above Average Movers shrink wraps and pads all
-                                    delicate property such as furniture, to avoid damaging your house when leaving, or
-                                    your assets. As a fully licensed and ensured moving company, we take every
-                                    precaution to ensure 100% consistency and safe, effective, timely transport and
-                                    setup. We even offer packing services if you want to remain hands-off the entire
-                                    process. Our employees must pass rigorous training in tight-spaces, 2-story moving,
-                                    and unique situations to assess, test, and develop them into the experts which will
-                                    arrive at your residence. See why thousands have trusted Above Average Movers with
-                                    their precious cargo.</p><h4 style="color: #051d8b">International Moving Company in
-                                    Atlanta</h4>
-                                <p>For cross-state, interstate and international moves, you can trust the experts at
-                                    Above Average Movers and Peach Worldwide to deliver your belongings in the same
-                                    condition as when they left. For a free estimate on your long distance move, give us
-                                    a call at 770-447-5121.</p>
-                                <p>Moving to another country? We’ve performed 5,987 moves last year alone; our expertise
-                                    is based on principles, values, and raw experience. The volume of work allows
-                                    Above Average Movers to quickly determine the level of sophistication a move
-                                    requires, man-power, time-line and price quote. We have friendly operators standing
-                                    by, or fill out our form to begin. We look forward to meeting you and taking the
-                                    stress of out of state country logistics moving off your plate.</p></div>
+                                Long distance moves are based on moving location, size of the move and other variables.
+                                We are able to provide the same level of care, service and
+                                excellence for long distance moves as we provide for our local moves. </p>
+                                <p><a class=" btn-success btn-sm" href="free-qoute.html" role="button"
+                                      style="margin-left:10px;margin-right: 30px; text-decoration: none;">Get A
+                                    Free Quote
+                                </a></p>
+                            </div>
                             <footer class="entry-footer"></footer>
                         </article>
                     </div>
@@ -290,56 +253,72 @@
                 </div>
                 <div class="collapse multi-collapse" id="multiCollapseExample3">
                     <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
+                        <article id="post-10" class="post-10 page type-page status-publish hentry">
+                            <header class="entry-header"><h1 class="entry-title" style="color: #051d8b">Furniture Protection
+                            </h1></header>
+                            <div class="entry-content"><p>
+                                Each item is protected with furniture pads and/or shrink wrap to ensure safe delivery of your furniture. </p>
+                                <p><a class=" btn-success btn-sm" href="free-qoute.html" role="button"
+                                      style="margin-left:10px;margin-right: 30px; text-decoration: none;">Get A
+                                    Free Quote
+                                </a></p>
+                            </div>
+                            <footer class="entry-footer"></footer>
+                        </article>
+
                     </div>
                 </div>
                 <div class="collapse multi-collapse" id="multiCollapseExample4">
                     <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
+                        <article id="post-11" class="post-10 page type-page status-publish hentry">
+                            <header class="entry-header"><h1 class="entry-title" style="color: #051d8b">Assembly/ Disassembly
+                            </h1></header>
+                            <div class="entry-content"><p>
+                                Our staff is able to assemble and disassemble ANY Items you have. This includes tables, beds, desks etc.  </p>
+                                <p><a class=" btn-success btn-sm" href="free-qoute.html" role="button"
+                                      style="margin-left:10px;margin-right: 30px; text-decoration: none;">Get A
+                                    Free Quote
+                                </a></p>
+                            </div>
+                            <footer class="entry-footer"></footer>
+                        </article>
+
                     </div>
                 </div>
                 <div class="collapse multi-collapse" id="multiCollapseExample5">
                     <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
+                        <article id="post-12" class="post-10 page type-page status-publish hentry">
+                            <header class="entry-header"><h1 class="entry-title" style="color: #051d8b">Senior Moving
+                            </h1></header>
+                            <div class="entry-content"><p>
+                                Senior Moving is priced at a discounted rate.  Click the link below for mor info.</p>
+                                <p><a class=" btn-success btn-sm" href="free-qoute.html" role="button"
+                                      style="margin-left:10px;margin-right: 30px; text-decoration: none;">Get A
+                                    Free Quote
+                                </a></p>
+                            </div>
+                            <footer class="entry-footer"></footer>
+                        </article>
                     </div>
                 </div>
                 <div class="collapse multi-collapse" id="multiCollapseExample6">
                     <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
-                    </div>
-                </div>
-                <div class="collapse multi-collapse" id="multiCollapseExample7">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
-                    </div>
-                </div>
-                <div class="collapse multi-collapse" id="multiCollapseExample8">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
-                    </div>
-                </div>
-                <div class="collapse multi-collapse" id="multiCollapseExample9">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
+                        <article id="post-12" class="post-10 page type-page status-publish hentry">
+                            <header class="entry-header"><h1 class="entry-title" style="color: #051d8b">Supplies
+                            </h1></header>
+                            <div class="entry-content"><p>
+                                All supplies with the exception of boxes are included in the moving quote. Boxes can be provided at an additional rate</p>
+                                <p><a class=" btn-success btn-sm" href="free-qoute.html" role="button"
+                                      style="margin-left:10px;margin-right: 30px; text-decoration: none;">Get A
+                                    Free Quote
+                                </a></p>
+                            </div>
+                            <footer class="entry-footer"></footer>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </header>
 
 <!-- Footer -->
