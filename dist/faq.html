@@ -311,91 +311,114 @@
             <div class="card">
               <div class="card-body" style="background-color: lightblue">
                 <form
-                  id="contact-form"
-                  class="needs-validation"
-                  method="post"
-                  action="/contact"
-                  novalidate
+                        id="contact-form"
+                        class="needs-validation"
+                        method="post"
+                        action="/contact"
+                        novalidate
                 >
-                  <h3 style="color: green">Get A Free Quote</h3>
+                  <h3 style="color: #051d8b">Get A Free Quote</h3>
                   <br />
-
                   <div class="form-group ">
                     <label for="Name" style="font-weight: bold" class="required"
-                      >Name</label
+                    >Name</label
                     >
-                    <input type="text" class="form-control" id="Name" />
+                    <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            id="Name"
+                    />
                   </div>
                   <div class="form-group ">
-                    <label
-                      for="Phone"
-                      style="font-weight: bold"
-                      class="required"
-                      >Phone Number</label
+                    <label for="Phone" style="font-weight: bold" class="required"
+                    >Phone Number</label
                     >
-                    <input type="number" class="form-control" id="Phone" />
+                    <input
+                            type="number"
+                            name="number"
+                            class="form-control"
+                            id="Phone"
+                    />
 
                     <div class="form-group ">
                       <label
-                        for="inputEmail4"
-                        style="font-weight: bold"
-                        class="required"
-                        >Email</label
+                              for="inputEmail4"
+                              style="font-weight: bold"
+                              class="required"
+                      >Email</label
                       >
                       <input
-                        type="email"
-                        class="form-control"
-                        id="inputEmail4"
+                              type="email"
+                              name="email"
+                              class="form-control"
+                              id="inputEmail4"
                       />
                     </div>
                     <div class="form-group ">
                       <label
-                        for="moveDate"
-                        style="font-weight: bold"
-                        class="required"
-                        >Move Date</label
+                              for="moveDate"
+                              style="font-weight: bold"
+                              class="required"
+                      >Move Date</label
                       >
-                      <input type="text" class="form-control" id="moveDate" />
+                      <input
+                              type="text"
+                              name="movedate"
+                              class="form-control"
+                              id="moveDate"
+                      />
                     </div>
                   </div>
                   <div class="form-group">
                     <label
-                      for="inputAddress"
-                      style="font-weight: bold"
-                      class="required"
-                      >Address</label
+                            for="inputAddress"
+                            style="font-weight: bold"
+                            class="required"
+                    >Address</label
                     >
-                    <input type="text" class="form-control" id="inputAddress" />
+                    <input
+                            type="text"
+                            name="address"
+                            class="form-control"
+                            id="inputAddress"
+                    />
                   </div>
                   <div class="form-group">
                     <label for="inputAddress2" style="font-weight: bold"
-                      >Address 2</label
+                    >Address 2</label
                     >
                     <input
-                      type="text"
-                      class="form-control"
-                      id="inputAddress2"
-                      placeholder="Apartment, studio, or floor"
+                            type="text"
+                            name="address2"
+                            class="form-control"
+                            id="inputAddress2"
+                            placeholder="Apartment, studio, or floor"
                     />
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label
-                        for="inputCity"
-                        style="font-weight: bold"
-                        class="required"
-                        >City</label
+                              for="inputCity"
+                              style="font-weight: bold"
+                              class="required"
+                      >City</label
                       >
-                      <input type="text" class="form-control" id="inputCity" />
+                      <input
+                              type="text"
+                              name="city"
+                              class="form-control"
+                              id="inputCity"
+                      />
                     </div>
                     <div class="form-group col-md-4">
                       <label
-                        for="inputState"
-                        style="font-weight: bold"
-                        class="required"
-                        >State</label
+                              for="inputState"
+                              style="font-weight: bold"
+                              class="required"
+                      >State</label
                       >
-                      <select id="inputState" class="form-control">
+                      <select id="inputState" name="state" class="form-control">
                         <option selected>Choose...</option>
 
                         <option value="AL">Alabama</option>
@@ -453,46 +476,69 @@
                     </div>
                     <div class="form-group col-md-2">
                       <label
-                        for="inputZip"
-                        style="font-weight: bold"
-                        class="required"
-                        >Zip</label
+                              for="inputZip"
+                              style="font-weight: bold"
+                              class="required"
+                      >Zip</label
                       >
-                      <input type="text" class="form-control" id="inputZip" />
+                      <input
+                              type="text"
+                              name="zip"
+                              class="form-control"
+                              id="inputZip"
+                      />
                     </div>
                   </div>
                   <div class="form-group">
                     <label
-                      for="exampleFormControlInput1"
-                      style="font-weight: bold"
-                      >How did you hear about us</label
+                            for="exampleFormControlInput1"
+                            style="font-weight: bold"
+                    >How did you hear about us</label
                     >
                     <input
-                      type="text"
-                      class="form-control"
-                      id="exampleFormControlInput1"
+                            type="text"
+                            class="form-control"
+                            name="refrence"
+                            id="exampleFormControlInput1"
                     />
                   </div>
+                  <div class="form-check">
+                    <input
+                            type="checkbox"
+                            name="IsSenior"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                    />
+                    <label
+                            class="form-check-label"
+                            for="exampleCheck1"
+                            style="font-weight: bold"
+                    >Senior Moving
+                      <small style="color: green">(60+)</small></label
+                    >
+                  </div>
+                  <br />
 
                   <div class="form-group">
                     <label
-                      for="exampleFormControlTextarea1"
-                      style="font-weight: bold"
-                      class="required"
-                      >Questions or Special Instructions</label
+                            for="exampleFormControlTextarea1"
+                            style="font-weight: bold"
+                            class="required"
+                    >Questions or Special Instructions</label
                     >
                     <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="10"
-                      placeholder="How many bed rooms do you have? Please Include Living room, Den & Dining room as a Bedroom"
+                            class="form-control"
+                            name="instructions"
+                            id="exampleFormControlTextarea1"
+                            rows="10"
+                            placeholder="How many bed rooms do you have? Please Include Living room, Den & Dining room as a Bedroom"
                     ></textarea>
                   </div>
 
                   <button
-                    type="submit"
-                    class="btn btn-success"
-                    style="border-radius: 10px;"
+                          type="submit"
+                          class="btn btn-success"
+                          style="border-radius: 10px;"
                   >
                     Submit
                   </button>
