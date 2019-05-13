@@ -58,16 +58,25 @@
           width: 150px;
         }
         .secondnav {
-          display: none !important;
+          visibility: hidden;
         }
         .navbar-nav {
           background-color: white;
         }
       }
-      @media (min-width: 992px) {
+      @media (min-width: 576px) {
+      }
+
+      @media (min-width: 768px) {
+      }
+
+      @media (min-width: 960px) {
         img {
           height: 250px;
           width: 300px;
+        }
+        .secondnav {
+          visibility: visible;
         }
       }
     </style>
