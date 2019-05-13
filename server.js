@@ -33,8 +33,8 @@ app.post("/contact", function(req, res) {
     port: 587,
     secure: false,
     auth: {
-      user: "aboveavg55@gmail.com",
-      pass: "Zebrastripes19"
+      user: process.env.GMAIL,
+      pass: process.env.GMAIL_KEY
     }
   });
 
